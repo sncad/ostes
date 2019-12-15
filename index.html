@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Choco Deli</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/5dea73779e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--custom css-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <!-- <i class="fas fa-bars" style="cursor:pointer" onclick="openNav()"></i> -->
+          <!-- <span style="cursor:pointer" onclick="openNav()">&#9776;</span> -->
+          <div class="dropdown">
+            <i class="fas fa-bars" style="cursor: pointer"></i>
+            <div class="dropdown-content">
+              <a href="#about">About</a>
+              <a href="#subs">Newsletter</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </span>
+        <span style="font-size: 25px; font-weight: bold; color: white">Choco Deli © </span>
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="banner">
+        <h1 class="banner-title">choco deli store</h1>
+        <button class="banner-btn">
+          <a href="#prods" style="text-decoration: none; color: black"
+            >SHOP NOW</a>
+        </button>
+      </div>
+    </header>
+    <!-- END OF HERO -->
+
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img
+          src="./images/product-9.jpg"
+          class="w3-round w3-image w3-opacity-min"
+          alt="Choco Deli"
+          width="600"
+          height="750"
+        />
+      </div>
+
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">About Choco Deli</h1>
+        <br />
+        <h5 class="w3-center">Tradition since 2012</h5>
+        <p class="w3-large">
+          Choco Deli was founded in 2012 by Sonata in Jakarta, Indonesia. Choco Deli 
+          sells freshly baked cakes of all kinds, ready to cater to all your needs
+          and cravings. We make beautiful cakes for special events such as birthdays,
+          celebrations, weddings, parties, or a customized present for your
+          loved ones! We bake each of our cake creations with love and can be adjusted to your
+          to your special needs. Choco Deli is the best place to go to order a delicious
+          and beautiful cakes. Here we offer you some of the best selling cakes in our store!
+          We only use <span class="w3-tag w3-light-grey">the finest</span> materials.
+        </p>
+        <p class="w3-large w3-text-grey w3-hide-medium">
+          All of our cakes are vegan. We do not use any animal products, eggs, or dairy in our
+          ingredients. Our cakes are freshly made everyday straight from the oven and 100% organic, healthy,
+          and a true delicacy for everyone who craves for sweetness.
+        </p>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- PRODUCTS -->
+    <section class="products" id="prods">
+      <div class="section-title">
+        <h2>our products</h2>
+      </div>
+
+      <div class="products-center"></div>
+    </section>
+    <!-- END OF PRODUCTS -->
+
+    <!-- CART -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>your cart</h2>
+        <div class="cart-content">
+          <!-- CART ITEM -->
+          <!-- <div class="cart-item">
+            
+          </div> -->
+          <!-- END OF CART ITEM -->
+        </div>
+
+        <div class="cart-footer">
+          <h3>your total : $ <span class="cart-total">0</span></h3>
+          <button class="clear-cart banner-btn">clear cart</button>
+          <button class="clear-cart banner-btn"><a href="checkout.html" style="text-decoration: none">Checkout</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- END OF CART-->
+
+      <!-- Subscribe section -->
+
+    <div class="w3-container w3-black w3-padding-32" id="subs">
+        <h2>Get Our Best Latest Products!</h2>
+        <p>Join our newsletter:</p>
+        <label>E-mail</label>
+        <input class="w3-input w3-border" type="text" placeholder="Your Email address" required>
+        <button type="button" class="w3-button w3-purple w3-margin-top"><span style="color: white">Subscribe</span></button>
+    </div> 
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-large w3-center" id="contact" style="background-color: #ffdff5">
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block send">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4 w3-large">
+        <h4>Location</h4>
+        <p>
+          Jakarta<br>
+          (Open 10AM-8PM) <br>
+          Central Park No. 99, Jakarta
+        </p>
+      </div>
+
+      <div class="w3-col s4 w3-justify w3-large">
+        <h4>Store</h4>
+        <p><i class="fas fa-map-marker"></i> Choco Deli</p>
+        <p><i class="fas fa-phone"></i> +6289912078</p>
+        <p><i class="fas fa-envelope"></i> cs@chocodeli.com</p>
+        <h4>We accept</h4>
+        <p><i class="fab fa-paypal"></i> PayPal</p>
+        <p><i class="fas fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fab fa-facebook" style="cursor:pointer"></i>
+        <i class="fab fa-instagram" style="cursor:pointer"></i>
+        <i class="fab fa-twitter" style="cursor:pointer"></i>
+        <i class="fab fa-youtube" style="cursor:pointer"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="last">© Choco Deli 2019</div>
+
+  <!-- End page content -->
+</div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
